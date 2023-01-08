@@ -1,0 +1,20 @@
+
+ZADATA:
+	.NET API apilikacija.
+
+	TASKS:	(1) GET koji vraca sve podrzane valute
+		(2) GET koji vrsi konverziju valuta sa sledecim pravilima (ograniceni broj API poziva)
+		(externi API se poziva u sledecim slucajevima):
+								1) Ukoliko nemamo trenutnu vrednost izmedju dve valute (kurs) u bazi podataka
+								2) Ukoliko je tad vrednost u bazi podataka starija od 1 dana
+
+PROBLEMI:
+	(1.1) Invalid JSON format u samom prilogu na sajtu FIXER.IO
+	(1.2) Problem sa URL-ovima (ne koristi se FIXER nego APILAYER)
+
+	(2.1) Problem aplikacije sa radom u kontinuitetu ( ograniceni broj API poziva po mesecu (100) )
+
+RESENJA: DEFI Path algoritam.
+	
+			
+			
